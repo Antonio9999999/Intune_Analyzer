@@ -1,0 +1,115 @@
+[
+  {
+    "id": "POL-001",
+    "name": "Baseline Compliance Policy",
+    "type": "Compliance",
+    "category": "Compliance",
+    "lastModified": "2024-01-15T10:30:00Z",
+    "assignmentCount": 150,
+    "settings": {
+      "password_required": false,
+      "password_min_length": 4,
+      "encryption_required": false,
+      "jailbreak_detection": true
+    }
+  },
+  {
+    "id": "POL-002",
+    "name": "Windows Security Baseline",
+    "type": "Endpoint Protection",
+    "category": "Sicurezza",
+    "lastModified": "2024-01-10T14:20:00Z",
+    "assignmentCount": 200,
+    "settings": {
+      "firewall_enabled": true,
+      "defender_real_time": false,
+      "smartscreen_enabled": false,
+      "bitlocker_enabled": true
+    }
+  },
+  {
+    "id": "POL-003",
+    "name": "Windows Update Policy",
+    "type": "Update",
+    "category": "Aggiornamenti",
+    "lastModified": "2024-01-12T09:00:00Z",
+    "assignmentCount": 180,
+    "settings": {
+      "deferral_days": 45,
+      "deadline_days": 21,
+      "active_hours": "8:00-18:00"
+    }
+  },
+  {
+    "id": "POL-004",
+    "name": "App Protection - Office",
+    "type": "App Protection",
+    "category": "Protezione App",
+    "lastModified": "2024-01-08T16:45:00Z",
+    "assignmentCount": 300,
+    "settings": {
+      "pin_required": false,
+      "data_transfer": "allow",
+      "save_copy_restriction": "allow",
+      "offline_access_limit": 90
+    }
+  },
+  {
+    "id": "POL-005",
+    "name": "Device Restrictions",
+    "type": "Device Restriction",
+    "category": "Restrizioni Device",
+    "lastModified": "2024-01-05T11:15:00Z",
+    "assignmentCount": 120,
+    "settings": {
+      "usb_restriction": "allow",
+      "camera_blocked": false,
+      "screen_capture_blocked": true
+    }
+  },
+  {
+    "id": "POL-006",
+    "name": "Advanced Compliance Policy",
+    "type": "Compliance",
+    "category": "Compliance",
+    "lastModified": "2024-01-18T08:00:00Z",
+    "assignmentCount": 75,
+    "settings": {
+      "password_required": true,
+      "password_min_length": 8,
+      "password_expiration_days": 90,
+      "encryption_required": true,
+      "jailbreak_detection": true,
+      "os_minimum_version": "10.0.19041"
+    }
+  },
+  {
+    "id": "POL-007",
+    "name": "Defender ATP Configuration",
+    "type": "Endpoint Protection",
+    "category": "Sicurezza",
+    "lastModified": "2024-01-20T12:30:00Z",
+    "assignmentCount": 250,
+    "settings": {
+      "firewall_enabled": true,
+      "defender_real_time": true,
+      "defender_cloud_protection": true,
+      "smartscreen_enabled": true,
+      "tamper_protection": true
+    }
+  },
+  {
+    "id": "POL-008",
+    "name": "Monthly Update Ring",
+    "type": "Update",
+    "category": "Aggiornamenti",
+    "lastModified": "2024-01-22T15:45:00Z",
+    "assignmentCount": 160,
+    "settings": {
+      "deferral_days": 15,
+      "deadline_days": 7,
+      "active_hours": "7:00-19:00",
+      "auto_restart": true
+    }
+  }
+]
