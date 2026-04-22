@@ -1,0 +1,135 @@
+{
+  "report_id": "RPT_20260422_115759",
+  "generated_at": "2026-04-22T11:57:59.007056",
+  "summary": {
+    "total_policies": 5,
+    "compliant_policies": 3,
+    "non_compliant_policies": 2,
+    "overall_score": 89.0
+  },
+  "category_summary": {
+    "Compliance": {
+      "total": 1,
+      "compliant": 0,
+      "non_compliant": 1,
+      "avg_score": 60.0,
+      "total_issues": 2
+    },
+    "Protezione Endpoint": {
+      "total": 2,
+      "compliant": 2,
+      "non_compliant": 0,
+      "avg_score": 100.0,
+      "total_issues": 0
+    },
+    "Configurazione": {
+      "total": 1,
+      "compliant": 1,
+      "non_compliant": 0,
+      "avg_score": 100.0,
+      "total_issues": 0
+    },
+    "Protezione App": {
+      "total": 1,
+      "compliant": 0,
+      "non_compliant": 1,
+      "avg_score": 85.0,
+      "total_issues": 1
+    }
+  },
+  "top_recommendations": [
+    {
+      "id": "COMP_comp-001_PWD_REQ",
+      "title": "Password non obbligatoria",
+      "severity": "CRITICA",
+      "category": "Compliance",
+      "description": "La password deve essere obbligatoria su tutti i device",
+      "current_value": false,
+      "recommended_value": true,
+      "impact": "I dispositivi possono essere accessibili senza password, aumentando il rischio di accesso non autorizzato.",
+      "remediation_steps": [
+        "Aprire Microsoft Endpoint Manager",
+        "Navigare su Dispositivi > Criteri di conformità",
+        "Selezionare la policy",
+        "Abilitare l'impostazione 'Password richiesta'",
+        "Salvare e assegnare la policy"
+      ]
+    },
+    {
+      "id": "COMP_comp-001_ENC",
+      "title": "Crittografia non richiesta",
+      "severity": "CRITICA",
+      "category": "Compliance",
+      "description": "Crittografia del dispositivo deve essere abilitata",
+      "current_value": false,
+      "recommended_value": true,
+      "impact": "I dati sui dispositivi potrebbero essere accessibili se il dispositivo viene perso o rubato.",
+      "remediation_steps": [
+        "Abilitare il requisito di crittografia nella policy di conformità",
+        "Verificare che BitLocker/FileVault siano configurati"
+      ]
+    },
+    {
+      "id": "APP_app-001_SAVE",
+      "title": "Salvataggio copie non bloccato",
+      "severity": "ALTA",
+      "category": "Protezione App",
+      "description": "Bloccare salvataggio copie dei dati aziendali",
+      "current_value": "Permesso",
+      "recommended_value": "Bloccato",
+      "impact": "Gli utenti possono salvare copie locali di dati aziendali sensibili.",
+      "remediation_steps": [
+        "Bloccare il salvataggio di copie dei dati aziendali",
+        "Permettere il salvataggio solo in posizioni approvate (OneDrive, SharePoint)",
+        "Configurare policy di retention appropriate"
+      ]
+    }
+  ],
+  "policy_details": [
+    {
+      "policy_id": "comp-001",
+      "policy_name": "Windows 10/11 Compliance Policy",
+      "category": "Compliance",
+      "is_compliant": false,
+      "score": 60.0,
+      "issues_found": 2,
+      "recommendations_count": 2
+    },
+    {
+      "policy_id": "sec-001",
+      "policy_name": "Windows Security Baseline",
+      "category": "Protezione Endpoint",
+      "is_compliant": true,
+      "score": 100.0,
+      "issues_found": 0,
+      "recommendations_count": 0
+    },
+    {
+      "policy_id": "upd-001",
+      "policy_name": "Windows Update Ring - Production",
+      "category": "Configurazione",
+      "is_compliant": true,
+      "score": 100.0,
+      "issues_found": 0,
+      "recommendations_count": 0
+    },
+    {
+      "policy_id": "app-001",
+      "policy_name": "Office Apps Protection Policy",
+      "category": "Protezione App",
+      "is_compliant": false,
+      "score": 85.0,
+      "issues_found": 1,
+      "recommendations_count": 1
+    },
+    {
+      "policy_id": "sec-002",
+      "policy_name": "Endpoint Protection Configuration",
+      "category": "Protezione Endpoint",
+      "is_compliant": true,
+      "score": 100.0,
+      "issues_found": 0,
+      "recommendations_count": 0
+    }
+  ]
+}

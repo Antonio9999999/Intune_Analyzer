@@ -1,5 +1,4 @@
 ```
-# Build artifacts
-*.html
-*.json
+__pycache__/
+*.pyc
 ```
